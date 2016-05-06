@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "brunch": "^2.7.6",
+    "javascript-brunch": "^2.0.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2"
+  }
+}
