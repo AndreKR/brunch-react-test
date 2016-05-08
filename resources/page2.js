@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var async = require('async');
 
 var helloWorld = React.createClass({
 	render: function () {
@@ -8,3 +9,5 @@ var helloWorld = React.createClass({
 });
 
 ReactDOM.render(React.createElement(helloWorld), document.getElementById('mountpoint'));
+
+async.series([ function () { document.getElementById('mountpoint').innerHTML = 'foo'; } ]);
